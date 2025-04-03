@@ -1,13 +1,14 @@
 import handleApiError from "@/helper/apiErrorHandler";
 import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from "axios";
 
-
-const API_URL_PROD = "http://54.242.149.77:8000";
+// Use the CORS proxy
+const API_URL_PROXY = "https://cors-anywhere.herokuapp.com/https://www.warematch.online/";
 
 const API = axios.create({
-  baseURL: API_URL_PROD,
+  baseURL: API_URL_PROXY,
   headers: {
     "Content-Type": "application/json",
+    "Origin": "https://wearmatch-assessment-git-api-end-point-stevesultans-projects.vercel.app", // Add your frontend origin here
   },
 });
 
