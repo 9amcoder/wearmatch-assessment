@@ -1,5 +1,10 @@
 # Technical Challenge - Trackforce valiant
-Live site: 
+Live site: https://wearmatch-assessment.vercel.app/
+
+- If you want to visit above url directly , you need to request for api proxy server
+- Go to this page: https://cors-anywhere.herokuapp.com/corsdemo
+- Then click "Request temporary access to the demo server"
+- After grant the permission, you get visit : https://wearmatch-assessment.vercel.app/listing
 ## Getting Started
 
 ### Prerequisites
