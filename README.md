@@ -34,11 +34,9 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```
 
-## Main Folder Structure
+### Main Folder Structure
 
-```
 root/
         app -> Next.js application directory
         components -> Reusable UI components
@@ -49,9 +47,9 @@ root/
         store -> Zustand store for state management
         constant -> Constants and types
         public -> Static assets (images, fonts, etc.)
-```
 
-## Technologies Used
+
+### Technologies Used
 
 - [Next.js](https://nextjs.org/)
 - [React](https://reactjs.org/)
@@ -64,7 +62,8 @@ root/
 - [Zustand](https://zustand.docs.pmnd.rs/getting-started/introduction)
 
 
-## Technical decision
+### Technical decision
+
 - Next.js: Popular and mature framework, maintainable , easy to use.
 - React: Modular component-based architecture with efficient rendering via virtual DOM.
 - TypeScript: Ensures code reliability and maintainability with static typing.
@@ -73,7 +72,7 @@ root/
 - ShadCn UI: Provides ready-made components, speeding up UI development.
 - Zustand: Lightweight state management with minimal boilerplate.
 
-## Challenges Faced
+### Challenges Faced
 
 - Challenge: Ensuring type safety for complex API responses, especially when dealing with nested objects like Listing or optional fields.
     - Solution: Utilized TypeScript interfaces and types to define the structure of API responses, ensuring that all components consuming the data are type-safe.
@@ -81,3 +80,13 @@ root/
 
 - Challenge: Handling inconsistent or missing data from the API, such as missing fields in the Listing object.
     - Solution: Implemented default values and fallback mechanisms to ensure the application remains functional even with incomplete data.
+ 
+### Screenshots
+
+### Desktop
+![Medium-Screen-300x400](https://github.com/user-attachments/assets/7f470382-19f5-4726-9a0b-18d6f63f0c17)
+
+### Mobile
+<img src="https://github.com/user-attachments/assets/b691919d-fb99-44b3-af91-aed16770d421" width="300" height="500" /> 
+
+
