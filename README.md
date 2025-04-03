@@ -87,6 +87,6 @@ root/
 ![Medium-Screen-300x400](https://github.com/user-attachments/assets/7f470382-19f5-4726-9a0b-18d6f63f0c17)
 
 ### Mobile
-![Pixel-3-3-XL-300x400](https://github.com/user-attachments/assets/b691919d-fb99-44b3-af91-aed16770d421)
+<img src="https://github.com/user-attachments/assets/b691919d-fb99-44b3-af91-aed16770d421" width="300" height="500" /> 
 
 
