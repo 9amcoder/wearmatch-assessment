@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
+# Technical Challenge - Trackforce valiant
+Live site: 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (version >= 18.17.0)
+- npm (Node Package Manager)
+
+### Installation
+
+1. Clone the repository:
+    ```bash
+    git clone [repository-url]
+    ```
+
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+### Running the Development Server
+
+Before start you need to create a `.env.local` file in the root directory and add the following environment variables:
+
+NEXT_PUBLIC_AUTH_TOKEN=`your_auth_token_here`
 
 ```bash
+
+Start the development server:
+```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Main Folder Structure
 
-## Learn More
+```
+root/
+        app -> Next.js application directory
+        components -> Reusable UI components
+        config -> Configuration files and constants
+        helper -> Utility functions and helpers
+        hooks -> Custom React hooks
+        lib -> Libraries and third-party integrations
+        store -> Zustand store for state management
+        constant -> Constants and types
+        public -> Static assets (images, fonts, etc.)
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vitest](https://vitest.dev/)
+- [Axios](https://axios-http.com/docs/intro)
+- [ShadCn UI](https://ui.shadcn.com/)
+- [Three.js](https://threejs.org/)
+- [Zustand](https://zustand.docs.pmnd.rs/getting-started/introduction)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Technical decision
+- Next.js: Popular and mature framework, maintainable , easy to use.
+- React: Modular component-based architecture with efficient rendering via virtual DOM.
+- TypeScript: Ensures code reliability and maintainability with static typing.
+- Tailwind CSS: Used for rapid UI development with minimal custom CSS.
+- Axios: Simplifies API requests with better error handling.
+- ShadCn UI: Provides ready-made components, speeding up UI development.
+- Zustand: Lightweight state management with minimal boilerplate.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Challenges Faced
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Challenge: Ensuring type safety for complex API responses, especially when dealing with nested objects like Listing or optional fields.
+    - Solution: Utilized TypeScript interfaces and types to define the structure of API responses, ensuring that all components consuming the data are type-safe.
+
+
+- Challenge: Handling inconsistent or missing data from the API, such as missing fields in the Listing object.
+    - Solution: Implemented default values and fallback mechanisms to ensure the application remains functional even with incomplete data.
