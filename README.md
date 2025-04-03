@@ -30,10 +30,12 @@ Before start you need to create a `.env.local` file in the root directory and ad
 
 NEXT_PUBLIC_AUTH_TOKEN=`your_auth_token_here`
 
-```bash
+Change api end point
+
+const API_URL_PROXY = 
 
 Start the development server:
-```bash
+```
 npm run dev
 ```
 
