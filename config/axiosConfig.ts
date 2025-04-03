@@ -2,7 +2,7 @@ import handleApiError from "@/helper/apiErrorHandler";
 import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from "axios";
 
 
-const API_URL_PROD = "http://54.242.149.77:8000";
+const API_URL_PROD = "https://www.warematch.online/";
 
 const API = axios.create({
   baseURL: API_URL_PROD,
